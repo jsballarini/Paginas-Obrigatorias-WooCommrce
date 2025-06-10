@@ -19,6 +19,7 @@ Plugin que cria automaticamente as páginas essenciais para seu site WordPress/W
 ## Funcionalidades
 
 - Cria automaticamente as páginas essenciais durante a ativação do plugin
+- Remove automaticamente as páginas quando o plugin é desativado
 - Substitui automaticamente as variáveis com informações do seu site:
   - Nome do site
   - URL do site
@@ -65,4 +66,4 @@ Este plugin é licenciado sob a GPL v2 ou posterior.
 
 ## Créditos
 
-Desenvolvido por [Seu Nome/Empresa] 
+Desenvolvido por Juliano Ballarini 

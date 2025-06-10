@@ -18,7 +18,19 @@ if (!defined('WPINC')) {
 }
 
 // Define a versão do plugin
-define('PAGINAS_ESSENCIAIS_VERSION', '1.0.0');
+define('PAGINAS_ESSENCIAIS_VERSION', '0.0.1');
+
+/**
+ * Array com os slugs das páginas criadas pelo plugin
+ */
+function paginas_essenciais_get_slugs() {
+    return array(
+        'termo-de-uso',
+        'politica-de-privacidade',
+        'politica-de-frete',
+        'politica-de-troca-e-devolucao'
+    );
+}
 
 /**
  * Função executada na ativação do plugin
@@ -96,4 +108,21 @@ function paginas_essenciais_activate() {
     }
 }
 
-register_activation_hook(__FILE__, 'paginas_essenciais_activate'); 
+/**
+ * Função executada na desativação do plugin
+ */
+function paginas_essenciais_deactivate() {
+    // Obtém os slugs das páginas
+    $slugs = paginas_essenciais_get_slugs();
+
+    // Remove cada página
+    foreach ($slugs as $slug) {
+        $page = get_page_by_path($slug);
+        if ($page) {
+            wp_delete_post($page->ID, true); // true para excluir permanentemente
+        }
+    }
+}
+
+register_activation_hook(__FILE__, 'paginas_essenciais_activate');
+register_deactivation_hook(__FILE__, 'paginas_essenciais_deactivate'); 
