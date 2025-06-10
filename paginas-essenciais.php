@@ -3,7 +3,7 @@
  * Plugin Name: Páginas Essenciais
  * Plugin URI: https://github.com/jsballarini/paginas-essenciais
  * Description: Cria automaticamente páginas essenciais como Termos de Uso, Política de Privacidade, Política de Fretes e Política de Troca e Devolução.
- * Version: 1.0.0
+ * Version: 0.0.1
  * Author: Juliano Ballarini
  * Author URI: https://ballarini.com.br
  * License: GPL v2 or later
