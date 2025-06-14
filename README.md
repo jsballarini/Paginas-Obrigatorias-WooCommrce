@@ -1,4 +1,4 @@
-# Páginas Essenciais para WordPress
+# Páginas Obrigatórias para Ecommerces Plugin para WordPress (pt-BR)
 
 Plugin que cria automaticamente as páginas essenciais para seu site WordPress/WooCommerce:
 
